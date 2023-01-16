@@ -11,12 +11,12 @@ html {
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   overflow-x: hidden; 
-  /* background-color: rgba(102, 220, 201, 0.6); */
-  background-image: url(/images/gallery-background.jpg) ;
+  background-color: rgba(117, 170, 156, 0.613);
+  /* background-image: url(../images/gallery-background.jpg) ;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center; */
 }
 
 #i1,
@@ -31,7 +31,7 @@ h1 {
   text-align: center;
   margin: 20px 0;
   font-size: 40pt;
-  color: #b5e4b2;
+  color: #0d110d;
 }
 
 .container {

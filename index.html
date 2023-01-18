@@ -8,21 +8,285 @@
     <title>Individual Project 1</title>
   </head>
   <body>
-    <h1>Individual Project 1</h1>
-    <h2>Biraj Bikram Pathak</h2>
-    <div class="main-container">
-      <a href="./pages/image_slider.html">
-        <div class="link-container">Sliding Photos</div>
-      </a>
-      <a href="./pages/arabic_form.html">
-        <div class="link-container">Arabic Form</div>
-      </a>
-      <a href="./pages/news.html">
-        <div class="link-container">News</div>
-      </a>
-      <a href="./pages/list.html">
-        <div class="link-container">List & Grid</div>
-      </a>
-    </div>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#photos">Sliding Photos</a>
+          </li>
+          <li>
+            <a href="#arabic-form">Arabic Form</a>
+          </li>
+          <li>
+            <a href="#news">News</a>
+          </li>
+          <li>
+            <a href="#list">List & Grid</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero-section">
+        <div class="hero-content">
+          <h1>Individual Project 1</h1>
+          <h3>Made by</h3>
+          <h2>Biraj Bikram Pathak</h2>
+        </div>
+      </div>
+      <section id="photos" class="image-slider-section">
+        <div class="container">
+          <input type="radio" id="i1" name="images" checked />
+          <input type="radio" id="i2" name="images" />
+          <input type="radio" id="i3" name="images" />
+          <input type="radio" id="i4" name="images" />
+          <input type="radio" id="i5" name="images" />
+
+          <div class="slide_img" id="one">
+            <img class="slide_img" src="../images/image1.jpg" />
+
+            <label class="prev" for="i5"><span>&#x2039;</span></label>
+            <label class="next" for="i2"><span>&#x203a;</span></label>
+          </div>
+
+          <div class="slide_img" id="two">
+            <img src="../images/image2.jpg" />
+
+            <label class="prev" for="i1"><span>&#x2039;</span></label>
+            <label class="next" for="i3"><span>&#x203a;</span></label>
+          </div>
+
+          <div class="slide_img" id="three">
+            <img src="../images/image3.jpg" />
+
+            <label class="prev" for="i2"><span>&#x2039;</span></label>
+            <label class="next" for="i4"><span>&#x203a;</span></label>
+          </div>
+
+          <div class="slide_img" id="four">
+            <img src="../images/image4.jpg" />
+
+            <label class="prev" for="i3"><span>&#x2039;</span></label>
+            <label class="next" for="i5"><span>&#x203a;</span></label>
+          </div>
+
+          <div class="slide_img" id="five">
+            <img src="../images/image5.jpg" />
+            <label class="prev" for="i4"><span>&#x2039;</span></label>
+            <label class="next" for="i1"><span>&#x203a;</span></label>
+          </div>
+
+          <div id="nav_slide">
+            <label for="i1" class="dots" id="dot1"></label>
+            <label for="i2" class="dots" id="dot2"></label>
+            <label for="i3" class="dots" id="dot3"></label>
+            <label for="i4" class="dots" id="dot4"></label>
+            <label for="i5" class="dots" id="dot5"></label>
+          </div>
+        </div>
+      </section>
+      <section id="arabic-form" class="form-section">
+        <h1>Form</h1>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <br />
+          <input type="submit" value="Send" />
+        </form>
+      </section>
+      <section id="list" class="list-section">
+        <h1>Top Programming Languages</h1>
+        <div class="list-container">
+          <div class="language-box">
+            <img
+              src="https://logo.clearbit.com/javascript.com"
+              alt="JavaScript logo"
+            />
+            <h2>JavaScript</h2>
+          </div>
+          <div class="language-box">
+            <img src="https://logo.clearbit.com/python.org" alt="Python logo" />
+            <h2>Python</h2>
+          </div>
+          <div class="language-box">
+            <img src="https://logo.clearbit.com/java.com" alt="Java logo" />
+            <h2>Java</h2>
+          </div>
+        </div>
+      </section>
+      <section id="news" class="news-section">
+        <h1>News</h1>
+        <div class="row">
+          <div class="col">
+            <h2>Data Science Revolutionizing Healthcare Industry</h2>
+            <p>
+              Data science is revolutionizing the healthcare industry, with new
+              technologies and techniques allowing for more accurate diagnoses
+              and personalized treatment plans. One area where data science is
+              having a significant impact is in the field of genomics. By
+              analyzing large amounts of genetic data, researchers are able to
+              identify genetic risk factors for a wide range of diseases,
+              including cancer and heart disease. This is allowing for earlier
+              detection and more targeted treatment. In addition, data science
+              is also being used to improve clinical trials, with machine
+              learning algorithms being used to identify the most promising
+              candidates for a particular treatment. This is leading to more
+              efficient and effective trials, and ultimately getting new
+              treatments to patients more quickly. Another area where data
+              science is making a difference is in the field of population
+              health. By analyzing large amounts of data from electronic health
+              records and other sources, researchers are able to identify
+              patterns and trends that can help to improve the health of entire
+              populations. Overall, data science is playing an increasingly
+              important role in the healthcare industry, and its impact will
+              only continue to grow in the future.
+            </p>
+          </div>
+          <div class="col">
+            <h2>Lionel Messi leads Argentina to World Cup Victory in 2022</h2>
+            <p>
+              The world watched in awe as Lionel Messi led Argentina to World
+              Cup victory in 2022. The tournament, held in Qatar, was filled
+              with thrilling moments, but none were more memorable than when
+              Messi lifted the World Cup trophy for the first time in his
+              career. Messi, who has long been considered one of the greatest
+              players of all time, was a dominant force throughout the
+              tournament, scoring crucial goals and making key assists. His
+              leadership on and off the field was vital to Argentina's success,
+              and his teammates credited him with helping to bring the team
+              together. The final match against France was an intense and
+              closely contested battle. After the match, Messi was awarded the
+              Golden Ball as the tournament's best player. He dedicated the
+              award to his teammates and the fans, saying, "This is for all of
+              Argentina. We did it together." The victory marks a historic
+              moment for Argentine football and will be remembered as one of the
+              greatest moments in sports history, with Messi's name written in
+              golden letters.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2>SpaceX Launches First Crewed Mission to Mars</h2>
+            <p>
+              SpaceX has successfully launched its first crewed mission to Mars,
+              with four astronauts on board. The mission, which was launched
+              from Cape Canaveral, Florida, is the first of its kind, and marks
+              a significant milestone in space exploration. The four astronauts
+              will spend the next six months on the Red Planet, conducting
+              research and exploring the surface. They will also be responsible
+              for setting up a permanent base on Mars, which will serve as a
+              stepping stone for future missions to the planet. The mission is
+              expected to be challenging, with the astronauts facing extreme
+              temperatures and radiation. However, the crew is confident that
+              they will be able to overcome these challenges and complete their
+              mission successfully. Overall, the mission is a major step forward
+              for space exploration, and will help to pave the way for future
+              missions to Mars.
+            </p>
+          </div>
+          <div class="col">
+            <h2>Elon Musk Launches Tesla into Space</h2>
+            <p>
+              Elon Musk has successfully launched his Tesla Roadster into space,
+              with the car now orbiting the Sun. The launch, which was carried
+              out from SpaceX's launch site in Florida, was the first of its
+              kind, and marks a significant milestone in space exploration. The
+              car, which was launched on a Falcon Heavy rocket, is now traveling
+              at 18,000 miles per hour, and is expected to reach Mars in six
+              months. The launch was a major success, with the rocket reaching
+              its target orbit and the car being successfully deployed. The car
+              is now traveling through space, with the onboard cameras providing
+              a live-stream of its journey. Overall, the launch was a major
+              success, and will help to pave the way for future missions to
+              Mars.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2>
+              New Study Finds that Drinking Coffee Can Lower Risk of Death
+            </h2>
+            <p>
+              A new study published in the journal "Annals of Internal Medicine"
+              has found that drinking coffee may lower the risk of death. The
+              study, which followed more than 185,000 adults for over 16 years,
+              found that those who drank more coffee had a lower risk of death
+              from all causes, including heart disease, stroke, and diabetes.
+              The study found that the risk of death decreased with each
+              additional cup of coffee consumed per day. Those who drank one cup
+              per day had a 12% lower risk of death, while those who drank six
+              or more cups per day had a 16% lower risk. The researchers also
+              found that the benefits of coffee were seen in both regular and
+              decaffeinated coffee, suggesting that it is the antioxidants and
+              other beneficial compounds in coffee, rather than the caffeine,
+              that are responsible for the lower risk of death. This is not the
+              first study to find a link between coffee consumption and a lower
+              risk of death. Other studies have also shown that coffee
+              consumption is associated with a lower risk of various diseases,
+              including Alzheimer's disease, Parkinson's disease, and certain
+              types of cancer. The authors of the study say that their findings
+              provide further evidence that moderate coffee consumption can be
+              part of a healthy diet, but more research is needed to understand
+              the specific compounds in coffee that may be responsible for the
+              health benefits.
+            </p>
+          </div>
+          <div class="col">
+            <h2>
+              Fitness Tracker Sales Soar as More People Prioritize Health and
+              Wellness
+            </h2>
+            <p>
+              Fitness trackers have become increasingly popular in recent years
+              as more and more people prioritize their health and wellness.
+              According to a recent report, sales of fitness trackers are
+              expected to reach over 100 million units by 2022, with a compound
+              annual growth rate of 15%. One reason for the growing popularity
+              of fitness trackers is the increasing awareness of the importance
+              of physical activity for overall health. Many people find that
+              using a fitness tracker helps them to stay motivated and track
+              their progress towards their fitness goals. Additionally, the
+              ability to track sleep and other metrics like heart rate, calories
+              burned and steps taken, makes it easy for people to understand
+              more about their health and make adjustments accordingly. Another
+              reason for the growing popularity of fitness trackers is the
+              increasing number of features available on these devices. Many
+              fitness trackers now include GPS, heart rate monitors, and other
+              advanced features that allow users to track their progress and see
+              how they compare to others.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2021 Biraj Bikram Pathak</p>
+    </footer>
+    <script>
+      // Select all links with a hash "#"
+      const links = document.querySelectorAll('a[href^="#"]');
+
+      // Iterate through links and add click event listener
+      links.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          // Get the target element's ID
+          const targetId = link.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          // Scroll to the target element
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    </script>
   </body>
 </html>
